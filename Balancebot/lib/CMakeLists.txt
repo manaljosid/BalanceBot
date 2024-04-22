@@ -1,5 +1,3 @@
-add_subdirectory(SCD30)
-add_subdirectory(BME280)
 add_subdirectory(ELRS)
 add_subdirectory(Servo)
 add_subdirectory(BNO055)
