@@ -144,10 +144,10 @@ bool repeating_timer_callback(struct repeating_timer* t) {
     right_motor_throttle = 0.0f;
 
     // Notice there's a deadband between 985 and 995
-    if (rc_channels.TURNING_CHANNEL > 997) {
+    if (rc_channels.TURNING_CHANNEL > 994) {
         // Turn right
         left_motor_throttle += ((((float)rc_channels.TURNING_CHANNEL) - 992.0f) / 819.0f) * MAX_TURNING_THROTTLE;
-    } else if (rc_channels.TURNING_CHANNEL < 987) {
+    } else if (rc_channels.TURNING_CHANNEL < 990) {
         // Turn left
         right_motor_throttle -= ((((float)rc_channels.TURNING_CHANNEL) - 992.0f) / 819.0f) * MAX_TURNING_THROTTLE;
     }
